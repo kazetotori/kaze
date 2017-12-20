@@ -1,0 +1,1 @@
+config-loader-class: ./core/YamlConfigLoader

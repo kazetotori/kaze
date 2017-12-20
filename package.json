@@ -1,0 +1,14 @@
+{
+    "name": "kaze",
+    "version": "1.0.0",
+    "main": "./src/kaze",
+    "author": {
+        "name": "kazetotori/fxqn",
+        "email": "695379748@qq.com",
+        "url": "https://github.com/kazetotori"
+    },
+    "description": "Kaze is an IOC factory for node.js",
+    "dependencies": {
+        "js-yaml": "3.10.0"
+    }
+}
