@@ -209,11 +209,11 @@ async function initInstance(model) {
         let classModule = require(classPath)
         let _constructor = className === '' ? classModule : classModule[className]
         // return the created instance
-        if (type === 'class') {
-            instance = new _constructor()
-        } else {
-            // default as a factory
+        if (type === 'factory') {
             instance = _constructor()
+        } else {
+            // default as a class
+            instance = new _constructor()
         }
     } else {
         // no any type or class configured, return an empty object.

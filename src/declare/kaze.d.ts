@@ -12,7 +12,7 @@ declare interface IConfigLoader {
     model(name: string): Promise<any>
 }
 
-declare interface IFactory extends ISerializable {
+declare interface IFactory {
     init(configLoader:IConfigLoader): Promise<void>
     getInstance(name: string): Promise<any>
 }
